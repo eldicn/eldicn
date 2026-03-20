@@ -1,52 +1,82 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 160" width="800">
-  <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=EB+Garamond:ital@1&display=swap');
-        .wrap {
-          background: #141210;
-          padding: 32px 48px;
-          border-radius: 12px;
-          border: 1px solid rgba(232,164,90,0.15);
-          display: flex;
-          align-items: center;
-          gap: 24px;
-        }
-        .flame {
-          font-size: 48px;
-          animation: flicker 1.8s ease-in-out infinite alternate;
-          display: inline-block;
-          transform-origin: bottom center;
-        }
-        @keyframes flicker {
-          0%   { transform: scaleX(1)   scaleY(1)    rotate(-1deg); opacity: 0.9; }
-          50%  { transform: scaleX(0.9) scaleY(1.1)  rotate(1deg);  opacity: 1;   }
-          100% { transform: scaleX(1.1) scaleY(0.95) rotate(0deg);  opacity: 0.85;}
-        }
-        .name {
-          font-family: 'Cinzel', serif;
-          font-size: 42px;
-          font-weight: 700;
-          letter-spacing: 0.08em;
-          color: #f0e8d8;
-          margin: 0;
-        }
-        .name span { color: #e8a45a; opacity: 0.5; }
-        .sub {
-          font-family: 'EB Garamond', Georgia, serif;
-          font-style: italic;
-          font-size: 15px;
-          color: #c4b090;
-          margin-top: 6px;
-        }
-      </style>
-      <div class="wrap">
-        <span class="flame">🔥</span>
-        <div>
-          <p class="name">Eld<span>icn</span></p>
-          <p class="sub">Ancient flame, carried forward.</p>
-        </div>
-      </div>
-    </div>
-  </foreignObject>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 140" width="800" height="140">
+  <style>
+    .fl-a { animation: fl 2.0s ease-in-out infinite alternate; transform-origin: 72px 88px; }
+    .fl-b { animation: fl 1.6s ease-in-out infinite alternate-reverse; transform-origin: 72px 88px; }
+    .fl-c { animation: fl 1.2s ease-in-out infinite alternate; transform-origin: 72px 88px; }
+    @keyframes fl {
+      0%   { transform: scaleX(1)    scaleY(1)    skewX(0deg);  }
+      40%  { transform: scaleX(0.88) scaleY(1.08) skewX(3deg);  }
+      100% { transform: scaleX(1.08) scaleY(0.94) skewX(-2deg); }
+    }
+    .sp1 { animation: sp 2.8s ease-out infinite;       }
+    .sp2 { animation: sp 3.2s ease-out 0.5s infinite;  }
+    .sp3 { animation: sp 2.5s ease-out 1.1s infinite;  }
+    .sp4 { animation: sp 3.5s ease-out 0.3s infinite;  }
+    @keyframes sp {
+      0%   { opacity: 0;   transform: translateY(0)     translateX(0);  }
+      15%  { opacity: 0.9; }
+      80%  { opacity: 0.2; }
+      100% { opacity: 0;   transform: translateY(-36px) translateX(4px); }
+    }
+    .sub { animation: fadein 2.5s ease forwards; }
+    @keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+  </style>
+
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="800" height="140" rx="12" fill="#141210"/>
+  <rect width="800" height="140" rx="12" fill="none" stroke="rgba(232,164,90,0.12)" stroke-width="1"/>
+
+  <!-- ambient glow under fire -->
+  <ellipse cx="72" cy="100" rx="36" ry="14" fill="#c47b2b" opacity="0.18" filter="url(#glow)"/>
+
+  <!-- flame layers -->
+  <path class="fl-a"
+    d="M64 92 Q54 72 62 52 Q70 38 68 54 Q78 40 74 58 Q82 46 78 62 Q84 54 80 68 Q76 80 72 88Z"
+    fill="#b05a10" opacity="0.6"/>
+  <path class="fl-b"
+    d="M65 92 Q57 74 63 56 Q70 44 69 58 Q77 46 74 62 Q80 52 77 66 Q74 78 72 88Z"
+    fill="#e8a45a" opacity="0.8"/>
+  <path class="fl-c"
+    d="M67 91 Q61 76 65 62 Q70 52 70 64 Q75 55 73 67 Q77 60 75 72 Q73 82 72 88Z"
+    fill="#f5d09a" opacity="0.7"/>
+
+  <!-- sparks -->
+  <circle class="sp1" cx="64" cy="50" r="1.3" fill="#f5d09a"/>
+  <circle class="sp2" cx="78" cy="44" r="1.0" fill="#e8a45a"/>
+  <circle class="sp3" cx="58" cy="42" r="0.9" fill="#f5d09a"/>
+  <circle class="sp4" cx="82" cy="54" r="1.1" fill="#e8a45a"/>
+
+  <!-- rocks at base -->
+  <ellipse cx="72" cy="98" rx="24" ry="7"  fill="#2e2820"/>
+  <ellipse cx="56" cy="100" rx="9" ry="5"  fill="#3a3228"/>
+  <ellipse cx="72" cy="101" rx="7" ry="4"  fill="#28231a"/>
+  <ellipse cx="88" cy="100" rx="9" ry="5"  fill="#3a3228"/>
+
+  <!-- wordmark -->
+  <text x="136" y="82"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="56" font-weight="700" letter-spacing="4"
+    fill="#f0e8d8">Eld</text>
+  <text x="253" y="82"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="56" font-weight="700" letter-spacing="4"
+    fill="#e8a45a" opacity="0.48">icn</text>
+
+  <!-- divider -->
+  <line x1="136" y1="94" x2="480" y2="94" stroke="rgba(232,164,90,0.2)" stroke-width="0.8"/>
+
+  <!-- tagline -->
+  <text class="sub" x="136" y="116"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="14" font-style="italic"
+    fill="#c4b090">Ancient flame, carried forward.</text>
 </svg>
