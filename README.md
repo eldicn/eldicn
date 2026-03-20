@@ -1,5 +1,5 @@
 <div align="center">
-<img src="flame2.svg" width="100%" alt="eldicn">
+<img src="flame3.svg" width="100%" alt="eldicn">
 </div>
 
 ---
@@ -19,7 +19,7 @@
 <div align="center">
 
 [![X](https://img.shields.io/badge/@eldicn-%23141210?style=for-the-badge&logo=x&logoColor=e8a45a)](https://x.com/eldicn)
-[![Instagram](https://img.shields.io/badge/@eldicn-%23141210?style=for-the-badge&logo=instagram&logoColor=e8a45a)](https://instagram.com/eldicn)
+[![Instagram](https://img.shields.io/badge/@eldicn-%23141210?style=for-the-badge&logo=instagram&logoColor=e8a45a)](https://www.instagram.com/eldicn)
 [![Stack Overflow](https://img.shields.io/badge/@eldicn-%23141210?style=for-the-badge&logo=stackoverflow&logoColor=e8a45a)](https://stackoverflow.com/users/12574334/eldicn)
 [![Website](https://img.shields.io/badge/eldi.cn-%23141210?style=for-the-badge&logo=firefox&logoColor=e8a45a)](https://eldi.cn)
 
