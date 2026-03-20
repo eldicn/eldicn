@@ -1,5 +1,5 @@
 <div align="center">
-<img src="flame.svg" width="100%" alt="eldicn">
+<img src="flame2.svg" width="100%" alt="eldicn">
 </div>
 
 ---
