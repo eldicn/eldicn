@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 160" width="800">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=EB+Garamond:ital@1&display=swap');
+        .wrap {
+          background: #141210;
+          padding: 32px 48px;
+          border-radius: 12px;
+          border: 1px solid rgba(232,164,90,0.15);
+          display: flex;
+          align-items: center;
+          gap: 24px;
+        }
+        .flame {
+          font-size: 48px;
+          animation: flicker 1.8s ease-in-out infinite alternate;
+          display: inline-block;
+          transform-origin: bottom center;
+        }
+        @keyframes flicker {
+          0%   { transform: scaleX(1)   scaleY(1)    rotate(-1deg); opacity: 0.9; }
+          50%  { transform: scaleX(0.9) scaleY(1.1)  rotate(1deg);  opacity: 1;   }
+          100% { transform: scaleX(1.1) scaleY(0.95) rotate(0deg);  opacity: 0.85;}
+        }
+        .name {
+          font-family: 'Cinzel', serif;
+          font-size: 42px;
+          font-weight: 700;
+          letter-spacing: 0.08em;
+          color: #f0e8d8;
+          margin: 0;
+        }
+        .name span { color: #e8a45a; opacity: 0.5; }
+        .sub {
+          font-family: 'EB Garamond', Georgia, serif;
+          font-style: italic;
+          font-size: 15px;
+          color: #c4b090;
+          margin-top: 6px;
+        }
+      </style>
+      <div class="wrap">
+        <span class="flame">🔥</span>
+        <div>
+          <p class="name">Eld<span>icn</span></p>
+          <p class="sub">Ancient flame, carried forward.</p>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
