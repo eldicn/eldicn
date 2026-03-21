@@ -22,8 +22,6 @@
 
   <!-- background -->
   <rect width="800" height="368" rx="6" fill="#0d1117"/>
-  <rect width="800" height="1" fill="#21262d"/>
-  <rect y="367" width="800" height="1" fill="#21262d"/>
 
   <!-- ambient glow -->
   <rect width="800" height="368" fill="url(#heatRight)"/>
