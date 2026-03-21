@@ -869,8 +869,8 @@
   <!-- section separator -->
   <line x1="0" y1="200" x2="800" y2="200" stroke="#161b22" stroke-width="1"/>
 
-  <!-- left accent bar -->
-  <rect x="0" y="200" width="3" height="160" fill="#e8a45a" opacity="0.18"/>
+  <!-- left accent bar: from first line top (226-13=213) to last line bottom (318+4=322) -->
+  <rect x="0" y="213" width="3" height="109" fill="#e8a45a" opacity="0.18"/>
 
   <!-- ── paragraph 1 ── -->
   <!-- "名字来自古北欧语" highlighted -->
