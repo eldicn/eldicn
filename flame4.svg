@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 368" width="800" height="368">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 370" width="800" height="370">
   <defs>
     <radialGradient id="heatRight" cx="85%" cy="90%" r="45%">
       <stop offset="0%"   stop-color="#e8a45a" stop-opacity="0.10"/>
@@ -894,7 +894,10 @@
   <!-- bottom rule -->
   <line x1="20" y1="338" x2="200" y2="338" stroke="#21262d" stroke-width="1"/>
 
-  <!-- bottom wordmark ghost -->
-  <text x="20" y="354" font-family="Georgia,serif" font-size="10" letter-spacing="3" fill="#21262d">ELDICN · eldi.cn</text>
+  <!-- footer -->
+  <text x="20" y="352" font-family="Georgia,serif" font-size="10" letter-spacing="3" fill="#4e443a">ELD</text>
+  <text x="48" y="352" font-family="Georgia,serif" font-size="10" letter-spacing="3" fill="#c47b2b" opacity="0.6">ICN</text>
+  <text x="80" y="352" font-family="Georgia,serif" font-size="10" fill="#2e2820"> · </text>
+  <text x="94" y="352" font-family="'Courier New',monospace" font-size="10" letter-spacing="1" fill="#2e2820">Still burning.</text>
 
 </svg>
