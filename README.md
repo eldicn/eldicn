@@ -1,20 +1,6 @@
 <div align="center">
-<img src="flame3.svg" width="100%" alt="eldicn">
+  <img src="flame4.svg" width="100%" alt="eldicn">
 </div>
-
----
-
-**名字来自古北欧语 *eldr*——炉火。**
-
-那种不表演、只是持续燃着的光。`eld` 也有「时代、岁月」之意：
-
-> 经历了时间，还在燃烧。
-
-这里写生活观察、技术思考，和那些在信息流里容易被冲走、却值得留下来细读的东西。
-
-*如果你也厌倦了快，欢迎在这里慢一会儿。*
-
----
 
 <div align="center">
 
